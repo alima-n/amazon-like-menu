@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>An Amazon-like menu</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class = "container">
+    <span class = "menu-btn">Catalogue</span>
+		<div class = "menu-block">
+	</div>
+
+	<script src="core.js"></script>
+  <script>
+    const mainMenu = {
+    'Amazon Video': ['Amazon Video', 'Lorem ipsum', ' Lorem', 'dolor sit', 'Natus sint consequuntur'],
+
+    'Amazon Music': ['Amazon Music','Bazinga!', 'Natus sint consequuntur', 'Lorem ipsum', ' Lorem', 'dolor sit', 'Natus sint consequuntur'],
+
+    'Appstore for Android': ['Appstore for Android','Комбайн для биополя', 'Lorem ipsum', ' Lorem', 'dolor sit', 'Natus sint consequuntur'],
+
+    'Echo & Alexa': ['Echo & Alexa','Шапка-невридимка', 'Lorem', 'dolor sit', 'Natus sint consequuntur', 'Lorem ipsum', ' Lorem'],
+
+    'Fire Tablets': ['Fire Tablets','Меч-леденец', 'Natus sint consequuntur', 'Lorem ipsum', ' Lorem', 'dolor sit'],
+
+    'Kindle E-readers & Books': ['Kindle E-readers & Books','На берегу', 'Lorem ipsum', ' Lorem', 'dolor sit', 'Natus sint consequuntur'],
+
+    'Movies, Music & Games': ['Movies, Music & Games','Мои материки', ' Lorem', 'dolor sit', 'Natus sint consequuntur', 'Lorem ipsum', ' Lorem', 'dolor sit', 'Natus sint consequuntur'],
+
+    'Electronics, Computers & Office': ['Electronics, Computers & Office','Коза с баяном', 'Lorem ipsum', ' Lorem', 'dolor sit'],
+
+    'Food & Grocery': ['Food & Grocery','Вот это да111', ' Lorem', 'dolor sit', 'Natus sint consequuntur', 'Lorem ipsum', ' Lorem', 'dolor sit', 'Natus sint consequuntur'],
+
+    'Toys, Kids & Baby': ['Toys, Kids & Baby','Зима близко!', 'Nailed it', 'dolor sit', 'Natus sint consequuntur', 'Lorem ipsum', ' Lorem'],
+
+    'Clothing, Shoes & Jewelry': ['Clothing, Shoes & Jewelry','Natus sint consequuntur', 'Lorem ipsum', ' Lorem', 'dolor sit'],
+    };
+    
+    new Menu(mainMenu, {
+      menuBtnClass: 'menu-btn',
+      menuClass: 'menu',
+      itemClass: 'menu-item',
+      activeItemClass: 'active-item',
+      submenuClass: 'submenu',
+      delay: 250,
+      target: 'menu-block'
+    });
+  </script>
+</body>
+</html>
